@@ -1,6 +1,6 @@
-Final Project Writeup: Ulleung Island January Snow Explorer
+Ulleung Island January Snow Explorer
 
-For my final project in our GEE class, I have decided to learn more about Ulleung Island. For me personally, I am a winter person; thus, I wanted to learn about the yearly snowfall for Ulleung Island. **This app helps solve the problem of understanding how January snow cover on Ulleung Island has changed over time and how snowy conditions differ between selected years.**
+ **This app helps solve the problem of understanding how January snow cover on Ulleung Island has changed over time and how snowy conditions differ between selected years.**
 
 I used the Sentinel-2 NDSI (Normalized Difference Snow Index) from Copernicus to identify snow from satellite coverage. **It uses the MODIS Terra Snow Cover Daily Global 500m ImageCollection, MODIS/061/MOD10A1, specifically the NDSI_Snow_Cover band, to measure January snow cover on Ulleung Island.** The Ulleung Island study area is defined manually using an ee.Geometry.Rectangle around the island rather than a separate FeatureCollection. To make this project slightly more simplified for both me and the user, I decided that I would only use January as the chosen month for the year. I chose January because it is generally the most consistent month for Ulleung-do to receive the most snow, with February being a close second.[^1] I think comparing years is better to understand how much snow Ulleung; thus, using only one month simplifies everything. My app has a title and written instructions that explain what the app does, displays, and calculates. The user can choose a single year to display a continuous NDSI snow-index map. The lower values will be green while the stronger snow values are white and blue.
 
